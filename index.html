@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> KIM SOO HYUN PORTFOLIO TEST FINAL </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Fav and touch icon-->
+        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+        <link rel="icon" href="./img/logo.png" type="image/x-icon">
+
+
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/animate.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="./js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div class="mask">
+            <div class="loading-container">
+                <div class="loading"></div>
+                <div id="loading-text">loading</div>
+            </div>
+         </div>
+        <!-- 상단 시작 -->
+        <section id="home" class="home-parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position: 50% 0px;">
+            <div class="home-overlay-v2">   
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="info">
+                            <div class="title-wrap">
+                                <div class="left-square"></div>
+                                <div class="right-square"></div>
+                                <div class="title-square"></div>
+                            </div>
+                        </div><!-- end .info -->
+                    </div><!-- end .col-md-12 -->
+                </div><!-- end .cotainer -->
+            </div><!-- end .home-overlay -->
+        </section>
+        <div class="main-menu-continer">
+            <nav id="main-menu" class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-navicon"></i>
+                        </button>
+                        <!-- Logo -->
+                        <a href="/" class="header-logo">
+                            <img src="./img/logo.png" alt="Logo" style="margin-top:10px;">
+                        </a> 
+                        <!-- Logo -->
+                    </div><!-- End .navbar-header -->
+        
+        
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!-- Nav -->
+                        <ul class="nav navbar-nav" id="navs">
+                            <li class="active"><a href="http://publisher.pe.kr#home" class="colapse-menu1">Home</a></li>
+                            <li ><a href="http://publisher.pe.kr#portfolio" class="colapse-menu1">PROFILE</a></li>
+                            <li><a href="http://publisher.pe.kr#resume" class="colapse-menu1">SKILL</a></li>
+                            <li><a href="http://publisher.pe.kr#service" class="colapse-menu1">Service</a></li>
+                            <li><a href="http://publisher.pe.kr#skills" class="colapse-menu1">Skill</a></li>
+                            <li><a href="http://publisher.pe.kr#contact" class="colapse-menu1">Contact</a></li>
+                        </ul>
+                    <!-- Nav End -->
+                    </div><!-- End .collapse -->
+                </div><!-- End .container -->
+            </nav><!-- End #main-menu -->
+            <div class="media">
+                <!-- more tags here -->
+                <img class="mr-3" src="./svg/title.svg" alt="Generic placeholder image" style="width:100px;height: 150px;">
+                <div class="media-body">
+                  <h5 class="mt-0">Media heading</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+        </div>
+        <!-- 컨테이너 끝 푸터 시작 -->
+        <footer>© Copyright 2020 sooblisher</footer>
+    </body>
+
+
+    <script type="text/javascript" language="javascript">
+
+    $(document).ready(function() {
+        $(window).load(function() {
+            $(".loading").delay(700).fadeOut();
+            $(".mask").delay(800).fadeOut("slow");    
+        });
+     
+    }); 
+ 
+    </script>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> KIM SOO HYUN PORTFOLIO TEST </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Fav and touch icons-->
+        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+        <link rel="icon" href="./img/logo.png" type="image/x-icon">
+
+        <link rel="stylesheet" type="text/css" href="./css/animate.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./css/commons.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="./js/bootstrap.js"></script>
+     
+    </head>
+    <body>
+        <div class="mask">
+            <div class="loading-container">
+                <div class="loading"></div>
+                <div id="loading-text">loading···</div>
+            </div>
+         </div>
+        <!-- top start -->
+        <section id="home" class="home-parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position: 50% 0px;">
+            <div class="home-overlay-v2">   
+                <div class="container">
+                    <div class="col-md-12">
+                       <!-- <div class="info"> -->
+                            <div class="col-md-8">
+                              <!--  <div class="title-square">-->
+                                    <img src='./img/title.png'>
+                                <!--</div>-->
+                            </div><!--end .col-md-8-->
+                            <!--    </div><! end .info -->
+                    </div><!-- end .col-md-12 -->
+                </div><!-- end .cotainer -->
+            </div><!-- end .home-overlay -->
+        </section>
+
+        <div class="main-menu-continer">
+            <nav id="main-menu" class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-navicon"></i>
+                        </button>
+                        <!-- Logo -->
+                        <a href="/" class="header-logo">
+                            <img src="./img/logo.png" alt="Logo" style="margin-top:10px;">
+                        </a> 
+                        <!-- Logo -->
+                    </div><!-- End .navbar-header -->
+        
+        
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!-- Nav -->
+                        <ul class="nav navbar-nav" id="navs">
+                            <li class="active"><a href="#home" class="colapse-menu1">Home</a></li>
+                            <li ><a href="#profile" class="colapse-menu1">PROFILE</a></li>
+                            <li><a href="#skill" class="colapse-menu1">SKILL</a></li>
+                            <li><a href="#UI" class="colapse-menu1">UI X UX</a></li>
+                            <li><a href="#contact" class="colapse-menu1">Contact</a></li>
+                        </ul>
+                    <!-- Nav End -->
+                    </div><!-- End .collapse -->
+                </div><!-- End .container -->
+            </nav><!-- End #main-menu -->
+            <section id="profile" class="section">
+                <div class="container">
+                    <div class="title-box"></div>
+                    <div class="section-title">
+                        <h2>PROFILE</h2>
+                    </div>
+                    <div class="row">
+                        <img src="./img/profile.png" id="profile-img">
+                        <div class="col-md-6" id="profile-text">
+                            <h3>NAME KIM SOO HYUN</h3>
+                            <h3>NAME KIM SOO HYUN</h3>
+                            <h3>NAME KIM SOO HYUN</h3>
+                        </div>
+                    </div>
+                </div><!-- profile container -->
+            </section>
+
+            <section id="skill" class="section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>SKILL</h2>
+
+                    </div>
+                </div><!-- skill container -->
+            </section>
+
+            <section id="ui" class="section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>UI X UX</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 t_center">
+                            <img src="./img/com.png">
+                        </div>
+                        <div class="col-md-4 t_center">
+                            <img src="./img/device_all.png">
+                        </div>
+                        <div class="col-md-4 t_center">
+                            <img src="./img/mobile.png">
+                        </div>                     
+                    </div>
+                </div><!-- UI container -->
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>CONTACT</h2>
+                    </div>
+                </div><!-- contact container -->
+            </section>
+        <!-- container end and footer start -->
+        <footer class="footer">
+            <div class="container">
+                <h2> © Copyright 2020 sooblisher </h2>
+            </div>
+        </footer>
+    </body>
+
+
+    <script type="text/javascript" language="javascript">
+
+    $(document).ready(function() {
+        
+        $(window).load(function() {
+            $(".loading").delay(700).fadeOut();
+            $(".mask").delay(800).fadeOut("slow");   
+        });
+     
+    }); 
+ 
+    </script>
+</html>
