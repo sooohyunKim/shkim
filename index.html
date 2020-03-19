@@ -1,99 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-        <title> KIM SOO HYUN PORTFOLIO TEST FINAL </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!--Fav and touch icon-->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="김수현" />
+        <title>김수현 포트폴리오</title>
+        <meta name="description" content="김수현 포트폴리오 사이트" />
+        <!--Fav and touch icons-->
         <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
         <link rel="icon" href="./img/logo.png" type="image/x-icon">
-
-
-        <link rel="stylesheet" type="text/css" href="./css/common.css">
-        <link rel="stylesheet" type="text/css" href="./css/animate.css">
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="./js/bootstrap.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/component.css" />
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/jquery.easypiechart.js"></script>
     </head>
-    <body>
-        <div class="mask">
-            <div class="loading-container">
-                <div class="loading"></div>
-                <div id="loading-text">loading</div>
-            </div>
-         </div>
-        <!-- 상단 시작 -->
-        <section id="home" class="home-parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position: 50% 0px;">
-            <div class="home-overlay-v2">   
-                <div class="container">
-                    <div class="col-md-12">
-                        <div class="info">
-                            <div class="title-wrap">
-                                <div class="left-square"></div>
-                                <div class="right-square"></div>
-                                <div class="title-square"></div>
-                            </div>
-                        </div><!-- end .info -->
-                    </div><!-- end .col-md-12 -->
-                </div><!-- end .cotainer -->
-            </div><!-- end .home-overlay -->
-        </section>
-        <div class="main-menu-continer">
-            <nav id="main-menu" class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <i class="fa fa-navicon"></i>
-                        </button>
-                        <!-- Logo -->
-                        <a href="/" class="header-logo">
-                            <img src="./img/logo.png" alt="Logo" style="margin-top:10px;">
-                        </a> 
-                        <!-- Logo -->
-                    </div><!-- End .navbar-header -->
-        
-        
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <!-- Nav -->
-                        <ul class="nav navbar-nav" id="navs">
-                            <li class="active"><a href="http://publisher.pe.kr#home" class="colapse-menu1">Home</a></li>
-                            <li ><a href="http://publisher.pe.kr#portfolio" class="colapse-menu1">PROFILE</a></li>
-                            <li><a href="http://publisher.pe.kr#resume" class="colapse-menu1">SKILL</a></li>
-                            <li><a href="http://publisher.pe.kr#service" class="colapse-menu1">Service</a></li>
-                            <li><a href="http://publisher.pe.kr#skills" class="colapse-menu1">Skill</a></li>
-                            <li><a href="http://publisher.pe.kr#contact" class="colapse-menu1">Contact</a></li>
+    <body class="main">
+        <a href="#" id="skip-nav">본문 바로가기</a>
+        <div id="wrapper">
+            <header id="header">
+                <div class="header-box">
+                    <h1><em>SOO</em>HYUN KIM</h1>
+                    <div class="logo">
+                        <a href="#"><img src="./img/logo-white.png"></a>
+                    </div>
+                    <div class="menu"><a href="#"><span>메뉴 열기/닫기</span></a></div>
+                    <nav id="gnb">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">PROFILE</a></li>
+                            <li><a href="#">SKILL</a></li>
+                            <li><a href="#">UI X UX</a></li>
+                            <li><a href="#">WORKPROCESS</a></li>
                         </ul>
-                    <!-- Nav End -->
-                    </div><!-- End .collapse -->
-                </div><!-- End .container -->
-            </nav><!-- End #main-menu -->
-            <div class="media">
-                <!-- more tags here -->
-                <img class="mr-3" src="./svg/title.svg" alt="Generic placeholder image" style="width:100px;height: 150px;">
-                <div class="media-body">
-                  <h5 class="mt-0">Media heading</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </nav>
+                </div>    
+            </header>
+            <main id="main">
+                <div id="control">
+                    <a href="#" class="prev"><img src="img/up-arrow.png" alt="up" /></a>
+                    <a href="#" class="next"><img src="img/down-arrow.png" alt="down" /></a>
                 </div>
-              </div>
+                <section id="contents">
+                    <div id="intro" class="fixed-box">
+                        <h2>MAIN</h2>
+                        <div class="detail">
+                            <h3>KIM SOOHYUN<br />PORTFOLIO</h3>
+                            <p class="text">김수현 포트폴리오 웹사이트입니다.</p>
+                        </div>
+                    </div>
+                    <div id="portfolio01" class="fixed-box">
+                        <h2>PORTFOLIO #01</h2>
+                        <div class="detail">
+                            <!--<span class="num-now"># 01</span>-->
+                            <h3>PROFILE</h3>
+                            <span class="type">RESPONSIVE WEBSITE</span>
+                            <ul>
+                                <li>
+                                    <span class="text">반응형 웹</span>
+                                </li>
+                                <li>
+                                    <span class="text">퍼블리싱 100%;</span>
+                                </li>
+                                <li>
+
+                                    <span class="text">Main Page, Sub Page1, Sub Page2</span>
+                                </li>
+                                <li>
+                                    <span class="text">다양한 유형의 슬라이드, 현재 페이지 표시, 레이어 팝업창, 체크박스를 활용한 갤러리</span>
+                                </li>
+                            </ul>
+                            <div class="btn-box">
+                                <a href="works/ediya/index.html" target="_blank">VIEW WEBSITE</a>
+                                <a href="works/ediya/page/menu_drink.html" target="_blank">VIEW SUB1</a>
+                                <a href="works/ediya/page/coffee-lab_lab-menu.html" target="_blank">VIEW SUB2</a>
+                                <a href="https://github.com/qjqmfrja00/ediya" target="_blank">VIEW CODE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="portfolio02" class="fixed-box">
+                        <h2>PORTFOLIO #02</h2>
+                        <div class="detail">
+                            <span class="num-now"></span>
+                            <h3>SKILLS</h3>
+                            <span class="type">RESPONSIVE WEBSITE</span>
+                            <ul>
+                                <li>
+                                    <span class="text">반응형 웹</span>
+                                </li>
+                                <li>
+                                    <span class="text">퍼블리싱 100%;</span>
+                                </li>
+                                <li>
+                                    <span class="text">Main Page</span>
+                                </li>
+                                <li>
+                                    <span class="text">키보드 조작이 가능한 패럴랙스, 마우스 커서를 따라 움직이는 이미지, 스크롤 이펙트</span>
+                                </li>
+                            </ul>
+                            <div class="btn-box">
+                                <a href="works/coscoi/index.html" target="_blank">VIEW WEBSITE</a>
+                                <a href="https://github.com/qjqmfrja00/coscoi" target="_blank">VIEW CODE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="portfolio03" class="fixed-box">
+                        <h2>PORTFOLIO #03</h2>
+                        <div class="detail">
+                            <span class="num-now"></span>
+                            <h3><span></span><br />UI/UX</h3>
+                            <span class="type">RESPONSIVE WEBSITE</span>
+                            <ul>
+                                <li>
+                                    <span class="text">반응형 웹</span>
+                                </li>
+                                <li>
+                                    <span class="text">퍼블리싱 100%;</span>
+                                </li>
+                                <li>
+                                    <span class="text">Main Page, Sub Page1</span>
+                                </li>
+                                <li>
+                                    <span class="text">카운팅 이벤트, 차트, 반응형 배너 슬라이드, IE9까지 지원</span>
+                                </li>
+                            </ul>
+                            <div class="btn-box">
+                                <a href="works/digital-archive/index.html" target="_blank">VIEW WEBSITE</a>
+                                <a href="works/digital-archive/page/intro_brand.html" target="_blank">VIEW SUB1</a>
+                                <a href="https://github.com/qjqmfrja00/digital-archive" target="_blank">VIEW CODE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="portfolio04" class="fixed-box">
+                        <h2>PORTFOLIO #04</h2>
+                        <div class="detail">
+                            <span class="num-now"></span>
+                            <h3>WORK PROCESS</h3>
+                            <span class="type">PC WEBSITE</span>
+                            <ul>
+                                <li>
+                                    <span class="text">PC 웹 사이트</span>
+                                </li>
+                                <li>
+                                    <span class="text">퍼블리싱 100%;</span>
+                                </li>
+                                <li>
+                                    <span class="text">Form Page, Layout Page,  Button Page</span>
+                                </li>
+                                <li>
+                                    <span class="text">모듈화된 css 서식, datepicker 라이브러리 활용</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div id="portfolio02" class="fixed-box">
+                        <h2>Portfolio</h2>
+                        <div class="detail">
+                            <span class="num-now"># 05</span>
+                            <h3>LALALAB</h3>
+                            <span class="type">RESPONSIVE WEBSITE</span>
+                            <ul>
+                                <li>
+                                    <span class="text">반응형 웹</span>
+                                </li>
+                                <li>
+                                    <span class="text">퍼블리싱 100%;</span>
+                                </li>
+                                <li>
+                                    <span class="text">Main Page</span>
+                                </li>
+                                <li>
+                                    <span class="text">스크롤 이펙트, 모바일 배너 스와이프</span>
+                                </li>
+                            </ul>
+                            <div class="btn-box">
+                                <a href="works/lalalab/index.html" target="_blank">VIEW WEBSITE</a>
+                                <a href="https://github.com/qjqmfrja00/lalalab" target="_blank">VIEW CODE</a>
+                            </div>
+                            <p class="notice">*포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다.<br />개인적인 작업물로 해당기업과는 관련 없습니다.</p>
+                        </div>
+                    </div>
+                    <div id="profile" class="fixed-box">
+                        <h2>Profile</h2>
+                        <div class="detail">
+                            <h3>Thank You</h3>
+                            <ul>
+                                <li>NAME / 김수현</li>
+                                <li>ADDRESS / 서울시 송파구 문정동 </li>
+                                <li>EMAIL / tbek12@gmail.com</li>
+                                <li>GITHUB / <a href="#">https://github.com/sooohyunKim</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="background">
+                    <h2>background</h2>
+                    <div class="scroll-page">
+                    </div>
+                    <div class="scroll-page">
+                        <img src="img/bg-ediya.png" alt="" />
+                    </div>
+                    <div class="scroll-page">
+                        <img src="img/bg-coscoi.png" alt="" />
+                    </div>
+                    <div class="scroll-page">
+                        <img src="img/bg-digital.png" alt="" />
+                    </div>
+                    <div class="scroll-page">
+                        <img src="img/bg-admin.png" alt="" />
+                    </div>
+                    <div class="scroll-page">
+                        <img src="img/bg-lalalab.png" alt="" />
+                    </div>
+                    <div class="scroll-page"></div>
+                </section>
+            </main>
+            <footer id="footer">
+                <a href="mailto:tbek12@gmail.com" class="email">tbek12@gamil.com</a>
+            </footer>
         </div>
-        <!-- 컨테이너 끝 푸터 시작 -->
-        <footer>© Copyright 2020 sooblisher</footer>
     </body>
-
-
-    <script type="text/javascript" language="javascript">
-
-    $(document).ready(function() {
-        $(window).load(function() {
-            $(".loading").delay(700).fadeOut();
-            $(".mask").delay(800).fadeOut("slow");    
-        });
-     
-    }); 
- 
-    </script>
 </html>
