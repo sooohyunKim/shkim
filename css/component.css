@@ -17,6 +17,24 @@ body {font: 14px 'Rubik', 'ë‚˜ëˆ”ê³ ë”•', 'ë‹ì›€', Dot
 #skip-nav {position: fixed; top: -40px; left: 0; width: 100%; line-height: 40px; text-align: center; font-size: 17px; color: #fff; background: rgba(0, 0, 0, 0.5); z-index: 10000; transition: 0.3s;}
 #skip-nav:focus {top: 0;}
 #wrapper {position: relative; width: 100%; height: 100vh; overflow: hidden;}
+.mask {
+    background-color: #ffffff;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.loading-container{
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 40px;
+}
+
 
 /*header*/
 #header h1 {position: absolute; top: 180px; left: 40px; font-size: 25px; font-weight: lighter; z-index: 4;color:#fff;}
@@ -137,6 +155,7 @@ body {font: 14px 'Rubik', 'ë‚˜ëˆ”ê³ ë”•', 'ë‹ì›€', Dot
 #contents > div div.detail span.type {display: inline-block; font-size: 25px; font-weight: 700;}
 #contents > div div.detail ul {margin: 10px 0;}
 #contents > div div.detail ul li {line-height: 30px; font-size: 16px; font-weight: 700; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;}
+#contents > div div.detail ul li span.text> em {border-bottom:2px solid #222;}
 #contents > div div.detail div.btn-box {width: 100%;}
 #contents > div div.detail div.btn-box a {display: inline-block; width: 45%; margin: 0 5px 5px 0; line-height: 45px; border: 1px solid #222; text-align: center; font-size: 14px; font-weight: 700;}
 #contents > div div.detail div.btn-box a:hover {background: #222; color: #fff;}

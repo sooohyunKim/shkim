@@ -1,5 +1,12 @@
 'use strict';
 $(function() {
+
+    $(document).ready(function() {
+        $(window).load(function() {
+            $(".loading").delay(700).fadeOut();
+            $(".mask").delay(800).fadeOut("slow");
+        });
+    });
     
     //a 링크 동작 막기
     $(document).on('click', 'a[href="#"]', function(e){

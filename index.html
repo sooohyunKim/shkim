@@ -11,12 +11,20 @@
         <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
         <link rel="icon" href="./img/logo.png" type="image/x-icon">
         <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-        <link rel="stylesheet" href="./css/component.css" />
+        <link rel="stylesheet" type="text/css" href="./css/component.css" />
+        <link rel="stylesheet" type="text/css" href="./css/animate.css">
         <script src="./js/jquery-3.2.1.min.js"></script>
         <script src="./js/common.js"></script>
         <script src="./js/jquery.easypiechart.js"></script>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     </head>
     <body class="main">
+        <div class="mask">
+            <div class="loading-container">
+                <div class="loading"></div>
+                <div id="loading-text">loading···</div>
+            </div>
+         </div>
         <a href="#" id="skip-nav">본문 바로가기</a>
         <div id="wrapper">
             <header id="header">
@@ -55,28 +63,24 @@
                         <div class="detail">
                             <!--<span class="num-now"># 01</span>-->
                             <h3>PROFILE</h3>
-                            <span class="type">RESPONSIVE WEBSITE</span>
+                            <span class="type">IT'S ME!</span>
                             <ul>
                                 <li>
-                                    <span class="text">반응형 웹</span>
+                                    <span class="text"><em>NAME</em>   KIM SOO HYUN</span>
                                 </li>
                                 <li>
-                                    <span class="text">퍼블리싱 100%;</span>
+                                    <span class="text"><em>EMAIL</em>  tbek12@gmail.com</span>
                                 </li>
                                 <li>
-
-                                    <span class="text">Main Page, Sub Page1, Sub Page2</span>
+                                    <span class="text"><em>ADDRESS</em>  서울시 송파구 문정동</span>
                                 </li>
                                 <li>
-                                    <span class="text">다양한 유형의 슬라이드, 현재 페이지 표시, 레이어 팝업창, 체크박스를 활용한 갤러리</span>
+                                    <span class="text"><em>GITHUB</em>  https://github.com/sooohyunKim</span>
+                                </li>
+                                <li>
+                                    <span class="text"><em>WEB PROGRAMMING</em> 2019.01 ~ </span>
                                 </li>
                             </ul>
-                            <div class="btn-box">
-                                <a href="works/ediya/index.html" target="_blank">VIEW WEBSITE</a>
-                                <a href="works/ediya/page/menu_drink.html" target="_blank">VIEW SUB1</a>
-                                <a href="works/ediya/page/coffee-lab_lab-menu.html" target="_blank">VIEW SUB2</a>
-                                <a href="https://github.com/qjqmfrja00/ediya" target="_blank">VIEW CODE</a>
-                            </div>
                         </div>
                     </div>
                     <div id="portfolio02" class="fixed-box">
@@ -178,7 +182,6 @@
                                 <a href="works/lalalab/index.html" target="_blank">VIEW WEBSITE</a>
                                 <a href="https://github.com/qjqmfrja00/lalalab" target="_blank">VIEW CODE</a>
                             </div>
-                            <p class="notice">*포트폴리오는 기존에 있는 사이트를 카피하여 구현하는 방식으로 제작하였습니다.<br />개인적인 작업물로 해당기업과는 관련 없습니다.</p>
                         </div>
                     </div>
                     <div id="profile" class="fixed-box">
@@ -199,7 +202,7 @@
                     <div class="scroll-page">
                     </div>
                     <div class="scroll-page">
-                        <img src="img/bg-ediya.png" alt="" />
+                        <img src="./img/profile.png" alt="" />
                     </div>
                     <div class="scroll-page">
                         <img src="img/bg-coscoi.png" alt="" />
