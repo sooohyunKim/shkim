@@ -17,12 +17,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="./js/bootstrap.js"></script>
+        <script src="./js/jquery.easypiechart.js"></script>
      
     </head>
     <body>
         <div class="mask">
             <div class="loading-container">
-                <div class="loading"></div>
+                <div class="loading" style="margin:0 auto;"></div>
                 <div id="loading-text">loading···</div>
             </div>
          </div>
@@ -30,14 +31,8 @@
         <section id="home" class="home-parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20" style="background-position: 50% 0px;">
             <div class="home-overlay-v2">   
                 <div class="container">
-                    <div class="col-md-12">
-                       <!-- <div class="info"> -->
-                            <div class="col-md-8">
-                              <!--  <div class="title-square">-->
-                                    <img src='./img/title.png'>
-                                <!--</div>-->
-                            </div><!--end .col-md-8-->
-                            <!--    </div><! end .info -->
+                    <div class="col-md-12 t_center">
+                        <img src='./img/title.png' class="img-responsive center-block">
                     </div><!-- end .col-md-12 -->
                 </div><!-- end .cotainer -->
             </div><!-- end .home-overlay -->
@@ -79,7 +74,9 @@
                         <h2>PROFILE</h2>
                     </div>
                     <div class="row">
+                        <div class="col-md-4">
                         <img src="./img/profile.png" id="profile-img">
+                        </div>
                         <div class="col-md-6" id="profile-text">
                             <h3>NAME KIM SOO HYUN</h3>
                             <h3>NAME KIM SOO HYUN</h3>
@@ -93,8 +90,60 @@
                 <div class="container">
                     <div class="section-title">
                         <h2>SKILL</h2>
-
                     </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 chart-padding" id="javascript">
+                           <div class="chart" data-percent="60">
+                            <p> 60
+                                <sup>%</sup>
+                            </p>
+                           </div>
+                           <div class="skills-content">
+                               <h3>javascript</h3>
+                           </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 chart-padding" id="bootstrap">
+                            <div class="chart" data-percent="80">
+                                <p> 80
+                                    <sup>%</sup>
+                                </p>
+                            </div>
+                            <div class="skills-content">
+                                <h3>bootstrap</h3>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 chart-padding" id="html">
+                            <div class="chart" data-percent="100">
+                                <p> 100
+                                    <sup>%</sup>
+                                </p>
+                            </div>
+                            <div class="skills-content">
+                                <h3>html/css</h3>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-7 chart-padding" id="jquery">
+                            <div class="chart" data-percent="70">
+                                <p> 70
+                                    <sup>%</sup>
+                                </p>
+                            </div>
+                            <div class="skills-content">
+                                <h3>jquery</h3>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 chart-padding" id="mysql">
+                            <div class="chart" data-percent="50">
+                                <p> 50
+                                    <sup>%</sup>
+                                </p>
+                            </div>
+                            <div class="skills-content">
+                                <h3>mysql</h3>
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div><!-- skill container -->
             </section>
 
@@ -136,12 +185,21 @@
     <script type="text/javascript" language="javascript">
 
     $(document).ready(function() {
-        
+
         $(window).load(function() {
             $(".loading").delay(700).fadeOut();
-            $(".mask").delay(800).fadeOut("slow");   
+            $(".mask").delay(800).fadeOut("slow");
         });
-     
+        /*----------------------------- Skill Chart --------------------------*/
+        $('.chart').easyPieChart({
+                animate: 3000,
+                lineWidth: 17,
+                barColor: '#f9cccc',
+                lineCap: 'round',
+                scaleColor: false,
+                trackColor: '#fef0f0',
+                size: 180
+        });
     }); 
  
     </script>
