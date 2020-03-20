@@ -5,6 +5,16 @@ $(function() {
         $(window).load(function() {
             $(".loading").delay(700).fadeOut();
             $(".mask").delay(800).fadeOut("slow");
+            /*----------------------------- Skill Chart --------------------------*/
+            $('.chart').easyPieChart({
+                animate: 3000,
+                lineWidth: 17,
+                barColor: '#f9cccc',
+                lineCap: 'round',
+                scaleColor: false,
+                trackColor: '#fef0f0',
+                size: 100
+            });
         });
     });
     

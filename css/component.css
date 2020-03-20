@@ -50,9 +50,89 @@ body {
     width: 40px;
 }
 
+/*background*/
+#background {position: absolute; top: 0; width: 100%; height: 100vh;}
+#background h2 {width: 0; height: 0; text-indent: -999px; overflow: hidden;}
+#background div.scroll-page {position: absolute; top: 0; left: 0; width: 100%; height: 100vh;}
+#background div.scroll-page:nth-child(2) {background: url(../img/bg-title.jpg) no-repeat left top /cover;}
+#background div.scroll-page:nth-child(3) {background: url(../img/bg-profile.jpg) no-repeat;}
+#background div.scroll-page:nth-child(4) {background: url(../img/bg-skills.jpg) no-repeat;}
+#background div.scroll-page:nth-child(5) {background: url(../img/bg-uiux.jpg) no-repeat;}
+#background div.scroll-page:nth-child(6) {background: url(../img/bg-workpro.jpg) no-repeat;}
+#background div.scroll-page:nth-child(7) {background: url(../img/bg-end.jpg) no-repeat;}
+#background div.scroll-page img {
+    position: absolute; 
+    right: 10%; 
+    top: 50%; 
+    transform: translate(0, -50%); 
+    max-width: 900px; 
+    width: 45%; 
+    min-width: 250px; 
+    box-shadow: 30px 40px 40px rgba(0, 0, 0, 0.6);
+}
+#background div.scroll-page div.skill-wrap {
+    position: absolute; 
+    right: 10%; 
+    top: 50%; 
+    transform: translate(0, -50%); 
+    max-width: 900px; 
+    width: 45%; 
+    min-width: 250px; 
+    background:transparent;
+}
+
+#background div.scroll-page div.skill-wrap div.row{
+    width: 100%; 
+}
+
+#background div.scroll-page div.skill-wrap div.row div.chart{
+    display: inline-block; 
+    width: 20%; 
+    margin: 0 5px 5px 0; 
+    line-height: 30px; 
+    text-align: center;
+    float:left; 
+}
+
+.chart p{
+    color: #fff;
+    font-size: 50px;
+}
+.chart p sup{
+    font-size: 35px;
+    margin-left:-20px;
+    top:-5px;
+}
+
+#background div.scroll-page div.skill-wrap div.row div.chart div.skills-content{
+    text-align: center;
+}
+#background div.scroll-page div.skill-wrap div.row div.chart div.skills-content > h3{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+#background div.scroll-page div.skill-wrap div.row div.chart div.skills-content > p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 960px) {
+    #background div.scroll-page img {right: auto; left: 50%; top: 30%; transform: translate(-50%, -50%);}
+}
+
 
 /*header*/
-#header h1 {position: absolute; top: 180px; left: 40px; font-size: 25px; font-weight: lighter; z-index: 4;color:#fff;}
+#header h1 {
+    position: absolute; 
+    top: 180px; 
+    left: 40px; 
+    font-size: 25px; 
+    font-weight: lighter; 
+    z-index: 4;
+    color:#fff;
+}
 #header h1 em {font-weight: bold;}
 #header div.logo{
     position: absolute; 
@@ -62,20 +142,68 @@ body {
     height: 46px;
     z-index: 4;
 }
-#header div.menu {position: absolute; top: 40px; right: 40px; width: 46px; height: 46px; line-height: 50px; border-radius: 50px; text-align: center; background:transparent; border:2px solid #fff;  z-index: 4;}
+#header div.menu {
+    position: absolute; 
+    top: 40px; 
+    right: 40px; 
+    width: 46px; 
+    height: 46px; 
+    line-height: 50px; 
+    border-radius: 50px; 
+    text-align: center; 
+    background:transparent; 
+    border:2px solid #fff;  
+    z-index: 4;
+}
 #header div.menu a {position: relative; display: inline-block; width: 20px; height: 13px; overflow: hidden;}
 #header div.menu a:before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: #fff;}
 #header div.menu a:after {content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #fff;}
-#header div.menu span {position: absolute; top: 50%; left: 0; transform: translate(0, -50%); width: 100%; height: 1px; text-indent: -999px; overflow: hidden; background: #fff;}
-#gnb {position: absolute; top: 0; right: -100%; width: 44%; height: 100vh; padding: 30px; box-sizing: border-box; z-index: 3; transition: 0.4s ease-in-out;}
+#header div.menu span {
+    position: absolute;
+    top: 50%; 
+    left: 0; 
+    transform: translate(0, -50%); 
+    width: 100%; 
+    height: 1px; 
+    text-indent: -999px; 
+    overflow: hidden; 
+    background: #fff;
+}
+#gnb {
+    position: absolute;
+    top: 0; 
+    right: -100%; 
+    width: 44%; 
+    height: 100vh; 
+    padding: 30px; 
+    box-sizing: border-box; 
+    z-index: 3; 
+    transition: 0.4s ease-in-out;
+}
 #header div.menu.open + #gnb {right: 0;}
 #header div.menu.open {
     background:#fff;
 }
 #header div.menu.open a:before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: #fce5e5;}
 #header div.menu.open a:after {content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #fce5e5;}
-#header div.menu.open span {position: absolute; top: 50%; left: 0; transform: translate(0, -50%); width: 100%; height: 1px; text-indent: -999px; overflow: hidden; background: #fce5e5;}
-#gnb ul {width: 100%; height: 100%; padding: 145px 25%; box-sizing: border-box; background: #fce5e5;}
+#header div.menu.open span {
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    transform: translate(0, -50%); 
+    width: 100%; 
+    height: 1px; 
+    text-indent: -999px; 
+    overflow: hidden; 
+    background: #fce5e5;
+}
+#gnb ul {
+    width: 100%; 
+    height: 100%; 
+    padding: 145px 25%; 
+    box-sizing: border-box; 
+    background: #fce5e5;
+}
 #gnb ul li {line-height: 70px; width: 80%}
 #gnb ul li a {display: inline-block; font-size: 40px; color: #9b9b9b; font-weight: bold;}
 #gnb ul li.on a,
@@ -98,7 +226,18 @@ body {
 }
 
 /*main*/
-#main a.hidden {position: fixed; left: 0; width: 200px; height: 0; line-height: 30px; text-align: center; color: #ffffff; background: rgba(0, 0, 0, 0.5); overflow: hidden; transition: height 0.3s;}
+#main a.hidden {
+    position: fixed; 
+    left: 0; 
+    width: 200px; 
+    height: 0; 
+    line-height: 30px; 
+    text-align: center; 
+    color: #ffffff; 
+    background: rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
+    transition: height 0.3s;
+}
 #main a.hidden:focus {height: 30px;}
 #main a.hidden.start {top: 0;}
 #main a.hidden.end {bottom: 0;}
@@ -137,8 +276,23 @@ body {
 #contents > div.up,
 #contents > div.hide-down,
 #contents > div.hide-up {display: block;}
-#contents > div h2 {position: absolute; top: 30px; left: 50%; padding-right: 43px; font-size: 30px; color:#fff;}
-#contents > div h2:after {content: ''; position: absolute; top: 50%; right: 0; width: 40px; height: 1px; background: #fff;}
+#contents > div h2 {
+    position: absolute; 
+    top: 30px; 
+    left: 50%; 
+    padding-right: 43px; 
+    font-size: 30px; 
+    color:#fff;
+}
+#contents > div h2:after {
+    content: ''; 
+    position: absolute; 
+    top: 50%; 
+    right: 0; 
+    width: 40px; 
+    height: 1px; 
+    background: #fff;
+}
 #contents > div div.detail {
     position: absolute; 
     bottom: 100px; 
@@ -170,12 +324,31 @@ body {
 #contents > div div.detail p.text {font-size: 18px;}
 #contents > div div.detail span.type {display: inline-block; font-size: 25px; font-weight: 700;}
 #contents > div div.detail ul {margin: 10px 0;}
-#contents > div div.detail ul li {line-height: 30px; font-size: 16px; font-weight: 700; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;}
+#contents > div div.detail ul li {
+    line-height: 30px; 
+    font-size: 16px; 
+    font-weight: 700; 
+    font-family: 'Noto Sans KR', sans-serif; 
+    word-break: keep-all;
+}
 #contents > div div.detail ul li span.text> em {border-bottom:2px solid #222;}
 #contents > div div.detail div.btn-box {width: 100%;}
-#contents > div div.detail div.btn-box a {display: inline-block; width: 45%; margin: 0 5px 5px 0; line-height: 45px; border: 1px solid #222; text-align: center; font-size: 14px; font-weight: 700;}
+#contents > div div.detail div.btn-box a {
+    display: inline-block; 
+    width: 45%; 
+    margin: 0 5px 5px 0; 
+    line-height: 45px; 
+    border: 1px solid #222; 
+    text-align: center; 
+    font-size: 14px; 
+    font-weight: 700;
+}
 #contents > div div.detail div.btn-box a:hover {background: #222; color: #fff;}
-#contents > div div.detail p.notice {font-size: 11px; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;}
+#contents > div div.detail p.notice {
+    font-size: 11px; 
+    font-family: 'Noto Sans KR', sans-serif; 
+    word-break: keep-all;
+}
 
 @keyframes up {
     0% {opacity: 0; transform: translateY(350px);}
@@ -197,7 +370,16 @@ body {
     #contents > #portfolio03 div.detail h3 {font-size: 35px;}
 }
 @media screen and (max-width: 960px) {
-    #contents {top: auto; bottom: 10px; left: 50%; transform: translate(-50%, 0); width: 80%; height: 40%; background: rgba(0, 0, 0, 0.3); z-index: 1;}
+    #contents {
+        top: auto; 
+        bottom: 10px; 
+        left: 50%; 
+        transform: translate(-50%, 0); 
+        width: 80%; 
+        height: 40%; 
+        background: rgba(0, 0, 0, 0.3); 
+        z-index: 1;
+    }
     #contents > div h2 {position: absolute; top: 10px; left: auto; right: 30px;}
     #contents > div div.detail {position: static; padding: 30px;}
     #contents > div div.detail h3 {font-size: 40px;}
@@ -210,23 +392,6 @@ body {
     #contents > div div.detail p.notice {display: none;}
     #contents > div div.detail div.btn-box a {line-height: 30px; }
 }
-
-/*background*/
-#background {position: absolute; top: 0; width: 100%; height: 100vh;}
-#background h2 {width: 0; height: 0; text-indent: -999px; overflow: hidden;}
-#background div.scroll-page {position: absolute; top: 0; left: 0; width: 100%; height: 100vh;}
-#background div.scroll-page:nth-child(2) {background: url(../img/bg-title.jpg) no-repeat left top /cover;}
-#background div.scroll-page:nth-child(3) {background: url(../img/bg-profile.jpg) no-repeat;}
-#background div.scroll-page:nth-child(4) {background: url(../img/bg-skills.jpg) no-repeat;}
-#background div.scroll-page:nth-child(5) {background: url(../img/bg-uiux.jpg) no-repeat;}
-#background div.scroll-page:nth-child(6) {background: url(../img/bg-workprocess.jpg) no-repeat;}
-#background div.scroll-page:nth-child(7) {background: url(../img/bg-end.jpg) no-repeat;}
-#background div.scroll-page img {position: absolute; right: 10%; top: 50%; transform: translate(0, -50%); max-width: 900px; width: 45%; min-width: 250px; box-shadow: 30px 40px 40px rgba(0, 0, 0, 0.6);}
-
-@media screen and (max-width: 960px) {
-    #background div.scroll-page img {right: auto; left: 50%; top: 30%; transform: translate(-50%, -50%);}
-}
-
 
 
 
