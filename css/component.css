@@ -1,6 +1,6 @@
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Kanit:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
 
 /*reset*/
 body {margin: 0;}
@@ -13,8 +13,23 @@ table {border-collapse: collapse;}
 address, em {font-style: normal;}
 
 /*common*/
-body {font: 14px 'Rubik', 'ë‚˜ëˆ”ê³ ë”•', 'ë‹ì›€', Dotum, Helvetica, 'Apple SD Gothic Neo', 'sans-serif'; color: #222;}
-#skip-nav {position: fixed; top: -40px; left: 0; width: 100%; line-height: 40px; text-align: center; font-size: 17px; color: #fff; background: rgba(0, 0, 0, 0.5); z-index: 10000; transition: 0.3s;}
+body {
+    font: 14px 'Kanit', 'sans-serif','Apple SD Gothic Neo', 'sans-serif';
+    color: #222;
+}
+#skip-nav {
+    position: fixed;
+     top: -40px;
+    left: 0; 
+    width: 100%; 
+    line-height: 40px; 
+    text-align: center; 
+    font-size: 17px; 
+    color: #fff; 
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 10000; 
+    transition: 0.3s;
+}
 #skip-nav:focus {top: 0;}
 #wrapper {position: relative; width: 100%; height: 100vh; overflow: hidden;}
 .mask {
@@ -148,10 +163,11 @@ body {font: 14px 'Rubik', 'ë‚˜ëˆ”ê³ ë”•', 'ë‹ì›€', Dot
 #contents > div.hide-up div.detail {animation: hide-down 0.3s forwards;}
 #contents > div div.detail span.num-now {display: inline-block; font-size: 17px;}
 #contents > div div.detail h3 {font-size: 70px;}
-#contents > #intro div.detail h3 {font-size: 80px;}
+#contents > #intro div.detail h3 {font-size: 85px; line-height: 95px;}
 #contents > #portfolio03 div.detail h3 {font-size: 50px;}
 #contents > #portfolio03 div.detail h3 span {font-family: 'Noto Sans KR', sans-serif;}
-#contents > div div.detail p.text {font-size: 18px; font-family: 'Noto Sans KR', sans-serif;}
+#contents > #portfolio04 div.detail h3 {line-height: 75px;}
+#contents > div div.detail p.text {font-size: 18px;}
 #contents > div div.detail span.type {display: inline-block; font-size: 25px; font-weight: 700;}
 #contents > div div.detail ul {margin: 10px 0;}
 #contents > div div.detail ul li {line-height: 30px; font-size: 16px; font-weight: 700; font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;}
@@ -203,9 +219,8 @@ body {font: 14px 'Rubik', 'ë‚˜ëˆ”ê³ ë”•', 'ë‹ì›€', Dot
 #background div.scroll-page:nth-child(3) {background: url(../img/bg-profile.jpg) no-repeat;}
 #background div.scroll-page:nth-child(4) {background: url(../img/bg-skills.jpg) no-repeat;}
 #background div.scroll-page:nth-child(5) {background: url(../img/bg-uiux.jpg) no-repeat;}
-#background div.scroll-page:nth-child(6) {background: url(../img/bg-06.jpg) no-repeat;}
-#background div.scroll-page:nth-child(7) {background: url(../img/bg-04.jpg) no-repeat;}
-#background div.scroll-page:nth-child(8) {background: url(../img/bg-05.jpg) no-repeat;}
+#background div.scroll-page:nth-child(6) {background: url(../img/bg-workprocess.jpg) no-repeat;}
+#background div.scroll-page:nth-child(7) {background: url(../img/bg-end.jpg) no-repeat;}
 #background div.scroll-page img {position: absolute; right: 10%; top: 50%; transform: translate(0, -50%); max-width: 900px; width: 45%; min-width: 250px; box-shadow: 30px 40px 40px rgba(0, 0, 0, 0.6);}
 
 @media screen and (max-width: 960px) {

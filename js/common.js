@@ -41,15 +41,19 @@ $(function() {
             $('#header div.menu').removeClass('open');
             $('.fixed-box:eq(' + index + ')').addClass('down');
         });
+        $('.logo').on('click',function() {
+            showPage(1);
+            $('.fixed-box:eq(0)').addClass('down');
+        });
         $('#control a.prev').on('click', function() {
-            if (pageNow === 1) { //첫 페이지에서 실행 안함
+            if (pageNow === 1) { //첫 페이지에서 실행 x
                 return false;
             } else {
                 showPage(pagePrev);
             }
         });
         $('#control a.next').on('click', function() {
-            if (pageNow === numPage) { //마지막 페이지에서 실행 안함
+            if (pageNow === numPage) { //마지막 페이지에서 실행 x
                 return false;
             } else {
                 showPage(pageNext);
