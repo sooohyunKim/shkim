@@ -2,19 +2,19 @@
 $(function() {
 
     $(document).ready(function() {
+
         $(window).load(function() {
             $(".loading").delay(700).fadeOut();
             $(".mask").delay(800).fadeOut("slow");
-            /*----------------------------- Skill Chart --------------------------*/
-            $('.chart').easyPieChart({
-                animate: 3000,
-                lineWidth: 17,
-                barColor: '#f9cccc',
-                lineCap: 'round',
-                scaleColor: false,
-                trackColor: '#fef0f0',
-                size: 100
-            });
+        });
+
+        $('#background div.scroll-page div.skill-wrap div.slideBtn-box li').on('mouseover', function() {
+            $(this).children('.percent').fadeIn();
+            $('#background div.scroll-page div.skill-wrap div.slideBtn-box li').not($(this)).children('.percent').fadeOut();
+        });
+
+        $('#background div.scroll-page div.skill-wrap div.slideBtn-box li').on('mouseleave', function() {
+            $(this).children('.percent').fadeOut();
         });
     });
     
@@ -96,7 +96,7 @@ $(function() {
         });
         
         function showPage(n) {
-            console.log(n);
+            console.log(n+"page");
             clearTimeout(effectTimerId);
             if (pageNow === 0) {
                 $('#background').css({'transition': 'none'});
