@@ -1296,7 +1296,6 @@ body {
     .container .contact .cnt_bx .btm_bx {
         display: none;
     }
-
 }
 
 
@@ -1343,6 +1342,7 @@ body {
 
     /* CONTACT */
     .container .contact .cnt_bx .btm_bx {
+        display: block;
         bottom: 127px;
         font-size: 35px;
     }
