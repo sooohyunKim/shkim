@@ -6,10 +6,7 @@ $(function () {
 })
 
 $(window).on('load', function () {
-    var $innerHeight = $(window).innerHeight();
-
     $('.container').delay(1700).fadeIn('slow');
-    $('body').css('height', $innerHeight);
 });
 
 function mouse() {
