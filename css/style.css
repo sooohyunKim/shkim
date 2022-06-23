@@ -1253,6 +1253,10 @@ body {
 
 
     /* PROFILE */
+    .container .bg_wrap>.profile .cnt_bx {
+        height: 600px;
+    }
+
     .container .profile .cnt_bx .card_bx .img_wrap {
         top: 50%;
         right: 23px;
@@ -1360,8 +1364,7 @@ body {
 
 }
 
-@media(max-width:1024px) {
-}
+@media(max-width:1024px) {}
 
 /* MOBILE */
 @media(max-width:786px) {
