@@ -3,6 +3,10 @@
     cursor: none;
 }
 
+html{
+    overscroll-behavior: contain;
+}
+
 body {
     position: relative;
     width: 100%;
