@@ -1294,7 +1294,7 @@ body {
 
     /* CONTACT */
     .container .contact .cnt_bx .btm_bx {
-        bottom: 200px;
+        display: none;
     }
 
 }
@@ -1438,7 +1438,7 @@ body {
 
     /* CONTACT */
     .container .contact .cnt_bx .btm_bx {
-        display:none;
+        display:block;
     }
 }
 
