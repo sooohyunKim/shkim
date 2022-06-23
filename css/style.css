@@ -1344,11 +1344,7 @@ body {
     }
 
     /* CONTACT */
-    .container .contact .cnt_bx .btm_bx {
-        display: block;
-        bottom: 127px;
-        font-size: 35px;
-    }
+    
 
     .container .contact .cnt_bx .btm_bx:before {
         top: 20px;
@@ -1437,6 +1433,11 @@ body {
 
     .container .project .cnt_bx .right_bx.right .list:nth-child(n+3) {
         margin-left: 0;
+    }
+
+    /* CONTACT */
+    .container .contact .cnt_bx .btm_bx {
+        bottom: 200px;
     }
 }
 
