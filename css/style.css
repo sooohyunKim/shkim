@@ -1300,6 +1300,9 @@ body {
 
 
 @media(max-width:1024px) {
+    .arrow {
+        bottom: 100px;
+    }
 
     .container .profile .cnt_bx .card_bx .img_wrap:before {
         width: 120px;
@@ -1435,14 +1438,7 @@ body {
     .container .project .cnt_bx .right_bx.right .list:nth-child(n+3) {
         margin-left: 0;
     }
-
-    /* CONTACT */
-    .container .contact .cnt_bx .btm_bx {
-        display:block;
-    }
 }
 
 /* MOBILE */
-@media(max-width:768px) {
-
-}
+@media(max-width:768px) {}
