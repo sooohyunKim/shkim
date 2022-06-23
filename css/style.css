@@ -1061,7 +1061,12 @@ body {
     }
 
     /* PROFILE */
+    .container .profile .cnt_bx .card_bx {
+        height: 600px;
+    }
+
     .container .profile .cnt_bx .card_bx .img_wrap {
+        top: 240px;
         right: -170px;
         width: 300px;
         height: auto;
@@ -1069,9 +1074,12 @@ body {
 
     .container .profile .cnt_bx .card_bx .img_wrap:before {
         top: 160px;
+        right: -90px;
+        width: 125px;
     }
 
     .container .profile .cnt_bx .card_bx .info_wrap {
+        bottom: -200px;
         font-size: 16px;
     }
 
@@ -1081,6 +1089,10 @@ body {
 
     .container .profile .cnt_bx .txt_bx {
         font-size: 55px;
+    }
+
+    .container .profile .cnt_bx .txt_bx .txt_wrap {
+        left: 32%;
     }
 
     .container .profile .cnt_bx .txt_bx .txt_wrap .sub_txt {
@@ -1254,7 +1266,7 @@ body {
     /* COMMON */
 
     /* PROFILE */
-    
+
     /* WORK EXPERIENCE */
     .container .work_experience .cnt_bx .item_bx {
         width: auto;
