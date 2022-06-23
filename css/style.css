@@ -1254,47 +1254,7 @@ body {
     /* COMMON */
 
     /* PROFILE */
-    .container .profile .cnt_bx .card_bx .img_wrap {
-        top: 50%;
-        right: 23px;
-        width: 240px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-
-    .container .profile .cnt_bx .card_bx .img_wrap:before {
-        top: initial;
-        bottom: -60px;
-        right: 147px;
-        width: 80px;
-        height: 2px;
-    }
-
-    .container .profile .cnt_bx .card_bx .info_wrap {
-        bottom: 250px;
-    }
-
-    .container .profile .cnt_bx .txt_bx .txt_wrap {
-        left: 9%;
-    }
-
-    .container .profile .cnt_bx .txt_bx .txt_wrap .sub_txt {
-        font-size: 14px;
-    }
-
-    .container .profile .cnt_bx .txt_bx .tag_list {
-        width: 450px;
-    }
-
-    .container .profile .cnt_bx .txt_bx .tag_list .tag {
-        width: 100px;
-        height: 38px;
-        font-size: 12px;
-        line-height: 34px;
-    }
-
+    
     /* WORK EXPERIENCE */
     .container .work_experience .cnt_bx .item_bx {
         width: auto;
@@ -1361,7 +1321,49 @@ body {
 
 }
 
-@media(max-width:1024px) {}
+@media(max-width:1024px) {
+    .container .profile .cnt_bx .card_bx .img_wrap {
+        top: 50%;
+        right: 23px;
+        width: 240px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .container .profile .cnt_bx .card_bx .img_wrap:before {
+        top: initial;
+        bottom: -60px;
+        right: 147px;
+        width: 80px;
+        height: 2px;
+    }
+
+    .container .profile .cnt_bx .card_bx .info_wrap {
+        bottom: 250px;
+    }
+
+    .container .profile .cnt_bx .txt_bx .txt_wrap {
+        left: 9%;
+    }
+
+    .container .profile .cnt_bx .txt_bx .txt_wrap .sub_txt {
+        font-size: 14px;
+    }
+
+    .container .profile .cnt_bx .txt_bx .tag_list {
+        width: 450px;
+    }
+
+    .container .profile .cnt_bx .txt_bx .tag_list .tag {
+        width: 100px;
+        height: 38px;
+        font-size: 12px;
+        line-height: 34px;
+    }
+
+}
 
 /* MOBILE */
 @media(max-width:786px) {
