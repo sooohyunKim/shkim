@@ -26,10 +26,11 @@ body {
     to {
         top: 16px;
         left: 50px;
-        -webkit-transform: translate(0, 0) scale(1, 1);
-        -ms-transform: translate(0, 0) scale(1, 1);
-        -moz-transform: translate(0, 0) scale(1, 1);
-        transform: translate(0, 0) scale(1, 1);
+        font-size: 18px;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }
 
@@ -304,11 +305,12 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    font-size: 60px;
     font-weight: 700;
-    -webkit-transform: translate(-50%, -50%) scale(5, 5);
-    -ms-transform: translate(-50%, -50%) scale(5, 5);
-    -moz-transform: translate(-50%, -50%) scale(5, 5);
-    transform: translate(-50%, -50%) scale(5, 5);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     animation: logo .7s ease-in-out forwards;
     animation-delay: 1.8s;
     z-index: 9999;
