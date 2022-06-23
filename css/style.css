@@ -1,10 +1,11 @@
 /* 2022 SOOHYUN PORTFOLIO */
 * {
     cursor: none;
+    overscroll-behavior: contain;
 }
 
 html{
-    overscroll-behavior: contain;
+    
 }
 
 body {
