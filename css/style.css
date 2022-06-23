@@ -1335,25 +1335,22 @@ body {
 
 @media(max-width:1024px) {
     .container .profile .cnt_bx .card_bx .img_wrap {
-        top: 50%;
+        top: 200px;
         right: 23px;
         width: 240px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        transform: translateY(-50%);
     }
 
     .container .profile .cnt_bx .card_bx .img_wrap:before {
         top: initial;
-        bottom: -60px;
+        bottom: -30px;
         right: 147px;
         width: 80px;
         height: 2px;
     }
 
     .container .profile .cnt_bx .card_bx .info_wrap {
-        bottom: 250px;
+        bottom: -45px;
+        left: 110px;
     }
 
     .container .profile .cnt_bx .txt_bx .txt_wrap {
