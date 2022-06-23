@@ -373,7 +373,6 @@ body {
 }
 
 .container .bg_wrap>section {
-    overflow: hidden;
     position: absolute;
     width: inherit;
     height: calc(100vh - 50px);
@@ -1273,6 +1272,7 @@ body {
 
     /* COMMON */
     .container .bg_wrap>section {
+        height: 100%;
         margin-top: 0;
     }
 
