@@ -93,7 +93,6 @@ function parallax() {
     });
 
     function showPage(n) {
-        console.log(n + "page");
         clearTimeout(effectTimerId);
         if (pageNow === 0) {
             $('.bg_wrap').css({ 'transition': 'none' });
