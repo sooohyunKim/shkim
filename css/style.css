@@ -1224,9 +1224,6 @@ body {
     .cursor {
         display: none;
     }
-}
-
-@media(max-width:1024px) {
 
     .arrow {
         top: initial;
@@ -1253,6 +1250,7 @@ body {
         margin-top: 0;
         margin-left: 15px;
     }
+
 
     /* PROFILE */
     .container .profile .cnt_bx .card_bx .img_wrap {
@@ -1360,6 +1358,9 @@ body {
         bottom: 200px;
     }
 
+}
+
+@media(max-width:1024px) {
 }
 
 /* MOBILE */
