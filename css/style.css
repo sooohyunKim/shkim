@@ -312,8 +312,8 @@ body {
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    animation: logo .7s ease-in-out forwards;
-    animation-delay: 1.5s;
+    animation: logo .5s ease-in-out forwards;
+    animation-delay: 1.2s;
     z-index: 9999;
 }
 
