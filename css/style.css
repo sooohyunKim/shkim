@@ -516,7 +516,7 @@ body {
 }
 
 .container .profile .cnt_bx .txt_bx .txt_wrap .sub_txt>p>i {
-    padding:0 5px;
+    padding: 0 5px;
     background: rgba(185, 238, 255, .9);
     border-radius: 20px;
 }
@@ -897,9 +897,10 @@ body {
     float: left;
     width: calc(100% / 4 - 22.5px);
     height: 60px;
-    padding: 20px 0;
     background: rgba(4, 44, 65, .5);
     color: #fff;
+    line-height: 56px;
+    border: 2px solid #003855;
     border-radius: 8px;
     box-sizing: border-box;
     box-shadow: 0px 8px 12px rgb(0 0 0 / 30%);
@@ -1003,7 +1004,6 @@ body {
 }
 
 .container .contact .cnt_bx .mid_bx .item_bx {
-    width: 200px;
     margin: 30px 0 0 20px;
 }
 
@@ -1048,7 +1048,167 @@ body {
 }
 
 /* LABTOP */
-@media(max-width:1600px) {}
+@media(max-width:1600px) {
+
+    .scroll {
+        width: 25px;
+        height: 42px;
+    }
+
+    .scroll .dot {
+        width: 7px;
+        height: 7px;
+    }
+
+    /* PROFILE */
+    .container .profile .cnt_bx .card_bx .img_wrap {
+        right: -170px;
+        width: 300px;
+        height: auto;
+    }
+
+    .container .profile .cnt_bx .card_bx .img_wrap:before {
+        top: 160px;
+    }
+
+    .container .profile .cnt_bx .card_bx .info_wrap {
+        font-size: 16px;
+    }
+
+    .container .profile .cnt_bx .card_bx .info_wrap>div>p:before {
+        height: 15px;
+    }
+
+    .container .profile .cnt_bx .txt_bx {
+        font-size: 55px;
+    }
+
+    .container .profile .cnt_bx .txt_bx .txt_wrap .sub_txt {
+        font-size: 16px;
+    }
+
+    .container .profile .cnt_bx .txt_bx .txt_wrap>div+div {
+        margin-top: 20px;
+        margin-left: 8px;
+    }
+
+    .container .profile .cnt_bx .txt_bx .tag_list {
+        margin-top: 20px;
+    }
+
+    .container .profile .cnt_bx .txt_bx .tag_list .tag {
+        width: 125px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 38px;
+    }
+
+    /* WORK EXPERIENCE */
+    .container .work_experience .cnt_bx .item_bx {
+        width: 850px;
+        height: 250px;
+    }
+
+    .container .work_experience .cnt_bx .item_bx .item {
+        font-size: 14px;
+    }
+
+    .container .work_experience .cnt_bx .item_bx .item .dt .company {
+        font-size: 20px;
+    }
+
+    .container .work_experience .cnt_bx .item_bx .item .dt .company .i_move {
+        top: 1px;
+        left: 8px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .container .work_experience .cnt_bx .item_bx .item .dt .company .i_move:before {
+        top: -4px;
+        right: -3px;
+        width: 9px;
+        height: 13px;
+        font-size: 13px;
+    }
+
+    .container .work_experience .cnt_bx .item_bx .item .dt .date {
+        margin-top: 15px;
+    }
+
+    .container .work_experience .cnt_bx .item_bx .item .dd {
+        margin-top: 15px;
+    }
+
+    .container .work_experience .cnt_bx .item_bx .item .dd .list_wrap {
+        margin-top: 15px;
+    }
+
+    /* PROJECT */
+    .container .project .cnt_bx .left_bx .view_wrap .view .item>.dt {
+        font-size: 25px;
+    }
+
+    .container .project .cnt_bx .left_bx .view_wrap .view .item>.dd {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .container .project .cnt_bx .left_bx .view_wrap .view .item .dd .info>dl+dl {
+        margin-top: 15px;
+    }
+
+    .container .project .cnt_bx .left_bx .view_wrap .view .item .dd .info>dl>dt:before {
+        top: 5px;
+    }
+
+    .container .project .cnt_bx .right_bx .list_wrap {
+        width: 800px;
+    }
+
+    .container .project .cnt_bx .right_bx .list_wrap .list {
+        height: 55px;
+        line-height: 51px;
+    }
+
+    .container .project .cnt_bx .right_bx .list_wrap .list>p {
+        font-size: 16px;
+    }
+
+    .container .project .cnt_bx .right_bx.right .list_wrap .list {
+        height: 55px;
+    }
+
+
+    /* CONTACT */
+    .container .contact .cnt_bx .mid_bx {
+        width: 420px;
+        font-size: 18px;
+    }
+
+    .container .contact .cnt_bx .mid_bx .tit {
+        top: -40px;
+        width: 300px;
+        font-size: 35px;
+    }
+
+    .container .contact .cnt_bx .mid_bx .item_bx {
+        margin: 15px 0 0 20px;
+    }
+
+    .container .contact .cnt_bx .mid_bx .item_bx .item .dd:before {
+        top: -17px;
+    }
+
+    .container .contact .cnt_bx .btm_bx {
+        font-size: 45px;
+    }
+
+    .container .contact .cnt_bx .btm_bx:before {
+        top: 27px;
+        height: 2px;
+    }
+}
 
 /* TABLET */
 @media(max-width:1366px) {
