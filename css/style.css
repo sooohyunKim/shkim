@@ -406,7 +406,7 @@ body {
 
 /* PROFILE */
 .container .bg_wrap>.profile {
-    height: 100vh;
+    height: 100%;
     margin-top: 0;
 }
 
