@@ -586,8 +586,6 @@ body {
 }
 
 /* WORK EXPERIENCE */
-.container .work_experience {}
-
 .container .work_experience .cnt_bx .item_bx {
     position: absolute;
     top: 50%;

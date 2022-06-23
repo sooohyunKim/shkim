@@ -1,242 +1,466 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="김수현" />
-        <title>김수현 포트폴리오</title>
-        <meta name="description" content="김수현 포트폴리오" />
-        <!--Fav and touch icons-->
-        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-        <link rel="icon" href="./img/logo.png" type="image/x-icon">
 
-        <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" type="text/css" href="./css/component.css" />
-        <link rel="stylesheet" type="text/css" href="./css/animate.css">
-        
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="soohyunkim">
+    <meta name="description" content="UI 개발자 김수현 포트폴리오">
+    <meta name="kewords" content="UI 개발자, 마크업 개발자, 퍼블리셔, 포트폴리오, 웹퍼블리셔 포트폴리오, UI 개발자 포트폴리오, 김수현, soohyun">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022-SOOHYUN | 포트폴리오</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-        <script type="text/JavaScript" src="./js/jquery-3.2.1.min.js"></script>
-        <script type="text/JavaScript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script type="text/JavaScript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <!--<script src="https://code.jquery.com/jquery-latest.min.js"></script>-->
-        <script src="./js/common.js"></script>
-        
-    </head>
-    <body class="main">
-        <div class="mask">
-            <div class="loading-container">
-                <div class="loading"></div>
-                <div id="loading-text">loading···</div>
-            </div>
-         </div>
-        <a href="#" id="skip-nav">본문 바로가기</a>
-        <div id="wrapper">
-            <header id="header">
-                <div class="header-box">
-                    <h1><em>SOO</em>HYUN KIM</h1>
-                    <div class="logo">
-                        <a href="#"><img src="./img/logo-white.png"></a>
-                    </div>
-                    <div class="menu"><a href="#"><span>메뉴 열기/닫기</span></a></div>
-                    <nav id="gnb">
-                        <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">PROFILE</a></li>
-                            <li><a href="#">SKILL</a></li>
-                            <li><a href="#">UI X UX</a></li>
-                            <li><a href="#">WORKPROCESS</a></li>
-                        </ul>
-                    </nav>
-                </div>    
-            </header>
-            <main id="main">
-                <div id="control">
-                    <a href="#" class="prev"><img src="img/up-arrow.png" alt="up" /></a>
-                    <a href="#" class="next"><img src="img/down-arrow.png" alt="down" /></a>
-                </div>
-                <section id="contents">
-                    <div id="intro" class="fixed-box">
-                        <h2>MAIN</h2>
-                        <div class="detail">
-                            <h3>KIM SOOHYUN<br />PORTFOLIO</h3>
-                            <p class="text">This is Kim Soohyun's portfolio website.</p>
-                        </div>
-                    </div>
-                    <div id="portfolio01" class="fixed-box">
-                        <h2>PORTFOLIO #01</h2>
-                        <div class="detail">
-                            <!--<span class="num-now"># 01</span>-->
-                            <h3>PROFILE</h3>
-                            <span class="type">IT'S ME!</span>
-                            <ul>
-                                <li>
-                                    <span class="text"><em>NAME</em>   KIM SOO HYUN</span>
-                                </li>
-                                <li>
-                                    <span class="text"><em>EMAIL</em>  tbek12@gmail.com</span>
-                                </li>
-                                <li>
-                                    <span class="text"><em>ADDRESS</em>  서울시 송파구 문정동</span>
-                                </li>
-                                <li>
-                                    <span class="text"><em>GITHUB</em>  https://github.com/sooohyunKim</span>
-                                </li>
-                                <li>
-                                    <span class="text"><em>WEB PROGRAMMING</em> 2019.01 ~ </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="portfolio02" class="fixed-box">
-                        <h2>PORTFOLIO #02</h2>
-                        <div class="detail">
-                            <span class="num-now"></span>
-                            <h3>WORK SKILLS</h3>
-                            <span class="type">PUT THE CURSOR ON THE RIGHT!</span>
-                            <ul>
-                                <li>
-                                    <span class="text">JAVASCRIPT</span>
-                                </li>
-                                <li>
-                                    <span class="text">HTML/CSS</span>
-                                </li>
-                                <li>
-                                    <span class="text">BOOTSTRAP</span>
-                                </li>
-                                <li>
-                                    <span class="text">JQUERY</span>
-                                </li>
-                                <li>
-                                    <span class="text">MYSQL</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="portfolio03" class="fixed-box">
-                        <h2>PORTFOLIO #03</h2>
-                        <div class="detail">
-                            <span class="num-now"></span>
-                            <h3><span></span><br />MY SERVICE</h3>
-                            <span class="type">RESPONSIVE WEBSITE</span>
-                            <ul>
-                                <li>
-                                    <span class="text">웹사이트 퍼블리싱 & UI개발</span>
-                                </li>
-                                <li>
-                                    <span class="text">반응형 레이아웃 웹사이트 퍼블리싱 & UI개발</span>
-                                </li>
-                                <li>
-                                    <span class="text">모바일 웹사이트 퍼블리싱 & UI개발</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="portfolio04" class="fixed-box">
-                        <h2>PORTFOLIO #04</h2>
-                        <div class="detail">
-                            <span class="num-now"></span>
-                            <h3>WORK PROCESS</h3>
-                            <span class="type">PUBLISHING</span>
-                            <ul>
-                                <li>
-                                    <span class="text">01. Idea</span>
-                                </li>
-                                <li>
-                                    <span class="text">02. Design</span>
-                                </li>
-                                <li>
-                                    <span class="text">03. Develop</span>
-                                </li>
-                                <li>
-                                    <span class="text">04. Test</span>
-                                </li>
-                                <li>
-                                    <span class="text">05. Apply</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="profile" class="fixed-box">
-                        <h2>END</h2>
-                        <div class="detail">
-                            <h3>Thank You</h3>
-                        </div>
-                    </div>
-                </section>
-                <section id="background">
-                    <h2>background</h2>
-                    <div class="scroll-page">
-                    </div>
-                    <div class="scroll-page">
-                        <img src="./img/profile.png" alt="" />
-                    </div>
-                    <div class="scroll-page">
-                        <img src="" alt="" />
-                        <div class="skill-wrap">
-                            <div class="slideBtn-box">
-                                <ul>
-                                    <li class="js">
-                                        <span class="text">JAVASCRIPT</span>
-                                        <span class="percent">70%</span>
-                                    </li>
-                                    <li class="html">
-                                        <span class="text">HTML5/CSS</span>
-                                        <span class="percent">100%</span>
-                                    </li>
-                                    <li class="boot">
-                                        <span class="text"> BOOTSTRAP</span>
-                                        <span class="percent">80%</span>
-                                    </li>
-                                    <li class="jquery">
-                                        <span class="text">JQUERY</span>
-                                        <span class="percent">60%</span>
-                                    </li>
-                                    <li class="mysql">
-                                        <span class="text">MYSQL</span>
-                                        <span class="percent">50%</span>
-                                    </li>
-                                </ul>
+<body>
+    <div class="logo">
+        <i>S</i>
+        <i>O</i>
+        <i>O</i>
+        <i>H</i>
+        <i>Y</i>
+        <i>U</i>
+        <i>N</i>
+    </div>
+    <div class="container">
+        <header class="header">
+            <ul class="menu_bx">
+                <li class="menu" data-tab="profile">Profile</li>
+                <li class="menu" data-tab="work_experience">Work Experience</li>
+                <li class="menu" data-tab="project">Project</li>
+                <li class="menu" data-tab="contact">Contact</li>
+            </ul>
+        </header>
+        <nav class="arrow">
+            <button type="button" class="prev"></button>
+            <button type="button" class="next"></button>
+        </nav>
+        <div class="bg_wrap">
+            <section class="profile">
+                <h3 class="blind">Profile</h3>
+                <div class="cnt_bx">
+                    <div class="card_bx">
+                        <div class="info_wrap">
+                            <div>
+                                <p>KIM SOO HYUN</p>
+                                <P>1996.06.12</P>
                             </div>
                         </div>
+                        <div class="img_wrap">
+                            <img src="./img/img_sh_01.jpg" alt="메인이미지">
+                        </div>
                     </div>
-                    <div class="scroll-page">
-                        <img src="./img/service.png" alt="" id="service-img" />
-                    </div>
-                    <div class="scroll-page">
-                        <div class="workprocess-wrap">
-                            <ul>
-                                <li>
-                                    <div class="work-idea"></div>
-                                    <span class="text">IDEA</span>
-                                </li>
-                                <li>
-                                    <div class="work-design"></div>
-                                   <span class="text">DESIGN</span>
-                                </li>
-                                <li>
-                                    <div class="work-develop"></div>
-                                    <span class="text">DEVELOP</span>
-                                </li>
-                                <li>
-                                    <div class="work-test"></div>
-                                    <span class="text">TEST</span>
-                                </li>
-                                <li>
-                                    <div class="work-apply"></div>
-                                    <span class="text">APPLY</span>
-                                </li>
+                    <div class="txt_bx">
+                        <div class="txt_wrap">
+                            <div class="t_txt">
+                                <p>UI 개발자</p>
+                                <p><i>김수현</i>입니다.</p>
+                            </div>
+                            <div class="sub_txt">
+                                <p>사용자의 움직임에 따라 즉각적으로 반응할 수 있는,</p>
+                                <p>웹만이 가지는 특성을 보다 잘 활용할 수 있는 <i>UI 개발자</i>를 지향합니다.</p>
+                                <p>레이아웃 구성뿐만 아니라 흥미와 집중을 이끌어내는 효과를</p>
+                                <p>작업하는 것에 매력을 느껴 끊임없이 공부하며 노력하고 있습니다.</p>
+                            </div>
+                            <ul class="tag_list">
+                                <li class="tag">#HTML</li>
+                                <li class="tag">#CSS3</li>
+                                <li class="tag">#JAVASCRIPT</li>
+                                <li class="tag">#JQUERY</li>
+                                <li class="tag">#반응형</li>
+                                <li class="tag">#웹표준</li>
+                                <li class="tag">#GIT</li>
+                                <li class="tag">#Chart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="scroll-page">
+                </div>
+            </section>
+            <section class="work_experience">
+                <h3 class="blind">WORKEXPERIENCE</h3>
+                <div class="cnt_bx">
+                    <ul class="dot_bx">
+                        <li class="dot"></li>
+                        <li class="dot"></li>
+                    </ul>
+                    <div class="item_bx">
+                        <dl class="item">
+                            <dt class="dt">
+                                <p class="company">(주)우남앤파트너스</p>
+                                <p class="date">사원 | 2019.01.22 - 2020.01.21</p>
+                            </dt>
+                            <dd class="dd">
+                                <div class="info_wrap">
+                                    <p>홈쇼핑 채널 다시보기 서비스를 제공하는 회사입니다.</p>
+                                    <p>웹페이지, TV UI에 관한 경험과 프론트엔드 지식을 쌓을 수 있었습니다.</p>
+                                </div>
+                                <ul class="list_wrap">
+                                    <li class="list">웹페이지 퍼블리싱 및 프론트엔드 작업</li>
+                                    <li class="list">TV UI 퍼블리싱 및 프론트엔드 작업</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="item">
+                            <dt class="dt">
+                                <p class="company"><i>노버스메이</i><a href="https://novusmay.com/home.html" target="_blank"
+                                        class="i_move"></a></p>
+                                <p class="date">매니저 | 2020.04.16 - 2022.05.31</p>
+                            </dt>
+                            <dd class="dd">
+                                <div class="info_wrap">
+                                    <p>사내 근무관리, 자산관리 솔루션을 제공하는 회사입니다.</p>
+                                    <p>각 디바이스별 반응형 작업 경험을 쌓고 다양한 구축사의 커스텀 작업을 진행했습니다.</p>
+                                </div>
+                                <ul class="list_wrap">
+                                    <li class="list">다수의 반응형 웹페이지 퍼블리싱 작업</li>
+                                    <li class="list">각 솔루션 별 웹/에이전트/모바일 퍼블리싱 작업</li>
+                                </ul>
+                            </dd>
+                        </dl>
                     </div>
-                </section>
-            </main>
-            <footer id="footer">
-               © Copyright 2020 shkim
-            </footer>
+                </div>
+            </section>
+            <section class="project">
+                <h3 class="blind">Project</h3>
+                <div class="cnt_bx">
+                    <div class="left_bx">
+                        <ul class="view_wrap">
+                            <li class="view">
+                                <dl class="item">
+                                    <dt class="dt"><i>홈쇼픽</i><a href="http://www.hspick.co.kr/index.html"
+                                            target="_blank" class="i_move"></a></dt>
+                                    <dd class="dd">
+                                        <div class="info">
+                                            <dl>
+                                                <dt>기간</dt>
+                                                <dd>2019.02 ~ 2019.09</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>기여도</dt>
+                                                <dd>100%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사용</dt>
+                                                <dd>
+                                                    <p>HTML / CSS / JAVASCRIPT / JQUERY</p>
+                                                    <p>JAVA / SPRING / SQL</p>
+                                                </dd>
+                                            </dl>
+                                            <dl class="work_list">
+                                                <dt>작업 내용</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>TV UI 퍼블리싱</li>
+                                                        <li>리모콘 동작에 따른 인터랙션 작업</li>
+                                                        <li>홈페이지 UI 퍼블리싱</li>
+                                                        <li>AJAX를 통한 데이터 연결</li>
+                                                        <li>이벤트 페이지 작업</li>
+                                                        <li>고객 DB 관리</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="view">
+                                <dl class="item">
+                                    <dt class="dt"><i>세이프로</i><a href="https://novusmay.com/safe-pro/" target="_blank"
+                                            class="i_move"></a></dt>
+                                    <dd class="dd">
+                                        <div class="info">
+                                            <dl>
+                                                <dt>기간</dt>
+                                                <dd>2020.05.13 ~ 2020.05.20</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>기여도</dt>
+                                                <dd>100%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사용</dt>
+                                                <dd>HTML / CSS / JAVASCRIPT / JQUERY</dd>
+                                            </dl>
+                                            <dl class="work_list">
+                                                <dt>작업 내용</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>홈페이지 퍼블리싱</li>
+                                                        <li>웹/노트북/태블릿/모바일 반응형 작업</li>
+                                                        <li>Chart.js / ScrollMagic / TweenMax 플러그인 사용</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="view">
+                                <dl class="item">
+                                    <dt class="dt">샘큐(구) 홈페이지</dt>
+                                    <dd class="dd">
+                                        <div class="info">
+                                            <dl>
+                                                <dt>기간</dt>
+                                                <dd>2020.05.22 ~ 2020.06.03</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>기여도</dt>
+                                                <dd>100%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사용</dt>
+                                                <dd>HTML / CSS / JAVASCRIPT / JQUERY</dd>
+                                            </dl>
+                                            <dl class="work_list">
+                                                <dt>작업 내용</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>홈페이지 퍼블리싱</li>
+                                                        <li>웹/노트북/태블릿/모바일 반응형 작업</li>
+                                                        <li>ScrollMagic / TweenMax 플러그인 사용</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="view">
+                                <dl class="item">
+                                    <dt class="dt">타임키퍼 솔루션 리뉴얼</dt>
+                                    <dd class="dd">
+                                        <div class="info">
+                                            <dl>
+                                                <dt>기간</dt>
+                                                <dd>2020.08 ~ 2020.09</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>기여도</dt>
+                                                <dd>50% (협업)</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사용</dt>
+                                                <dd>HTML / CSS / JAVASCRIPT / JQUERY</dd>
+                                            </dl>
+                                            <dl class="work_list">
+                                                <dt>작업 내용</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>솔루션 웹페이지 퍼블리싱</li>
+                                                        <li>웹/에이전트/모바일 작업</li>
+                                                        <li>Chart.js / Slick / Summernote 플러그인 사용</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="img"></div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="view">
+                                <dl class="item">
+                                    <dt class="dt"><i>타임키퍼 홈페이지</i><a href="https://novusmay.com/timekeeper/"
+                                            target="_blank" class="i_move"></a></dt>
+                                    <dd class="dd">
+                                        <div class="info">
+                                            <dl>
+                                                <dt>기간</dt>
+                                                <dd>2020.11.26 ~ 2020.12.04</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>기여도</dt>
+                                                <dd>100%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사용</dt>
+                                                <dd>HTML / CSS / JAVASCRIPT / JQUERY</dd>
+                                            </dl>
+                                            <dl class="work_list">
+                                                <dt>작업 내용</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>홈페이지 퍼블리싱</li>
+                                                        <li>웹/노트북/태블릿/모바일 반응형 작업</li>
+                                                        <li>ScrollMagic / TweenMax 플러그인 사용</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="view">
+                                <dl class="item">
+                                    <dt class="dt">한화기계 솔루션</dt>
+                                    <dd class="dd">
+                                        <div class="info">
+                                            <dl>
+                                                <dt>기간</dt>
+                                                <dd>2021.02 ~ 2021.09</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>기여도</dt>
+                                                <dd>50% (협업)</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사용</dt>
+                                                <dd>HTML / CSS / JAVASCRIPT / JQUERY</dd>
+                                            </dl>
+                                            <dl class="work_list">
+                                                <dt>작업 내용</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>솔루션 웹페이지 퍼블리싱</li>
+                                                        <li>웹/모바일 작업</li>
+                                                        <li>GoogleChart / Summernote 플러그인 사용</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="view">
+                                <dl class="item">
+                                    <dt class="dt"><i>샘큐 솔루션</i><a href="https://pro.samq.co.kr/sample/main.html"
+                                            target="_blank" class="i_move"></a></dt>
+                                    <dd class="dd">
+                                        <div class="info">
+                                            <dl>
+                                                <dt>기간</dt>
+                                                <dd>2021.04 ~ 2022.01</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>기여도</dt>
+                                                <dd>100%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사용</dt>
+                                                <dd>HTML / CSS / JAVASCRIPT / JQUERY</dd>
+                                            </dl>
+                                            <dl class="work_list">
+                                                <dt>작업 내용</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>솔루션 웹페이지 퍼블리싱</li>
+                                                        <li>웹/에이전트/모바일 작업</li>
+                                                        <li>Chart.js/ Slick / Summernote 플러그인 사용</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="view">
+                                <dl class="item">
+                                    <dt class="dt"><i>샘큐 홈페이지</i><a href="https://pro.samq.co.kr/" target="_blank"
+                                            class="i_move"></a></dt>
+                                    <dd class="dd">
+                                        <div class="info">
+                                            <dl>
+                                                <dt>기간</dt>
+                                                <dd>2021.08.12 ~ 2021.08.17</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>기여도</dt>
+                                                <dd>100%</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사용</dt>
+                                                <dd>HTML / CSS / JAVASCRIPT / JQUERY</dd>
+                                            </dl>
+                                            <dl class="work_list">
+                                                <dt>작업 내용</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>홈페이지 퍼블리싱</li>
+                                                        <li>웹/노트북/태블릿/모바일 반응형 작업</li>
+                                                        <li>Slick / ScrollMagic / TweenMax 플러그인 사용</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_bx">
+                        <ul class="list_wrap">
+                            <li class="list">
+                                <p>홈쇼픽</p>
+                            </li>
+                            <li class="list">
+                                <p>세이프로 홈페이지</p>
+                            </li>
+                            <li class="list">
+                                <p>샘큐(구) 홈페이지</p>
+                            </li>
+                            <li class="list">
+                                <p>타임키퍼 리뉴얼</p>
+                            </li>
+                            <li class="list">
+                                <p>타임키퍼 홈페이지</p>
+                            </li>
+                            <li class="list">
+                                <p>한화기계</p>
+                            </li>
+                            <li class="list">
+                                <p>샘큐 리뉴얼</p>
+                            </li>
+                            <li class="list">
+                                <p>샘큐 홈페이지</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <h3 class="blind">Contact</h3>
+                <div class="cnt_bx">
+                    <div class="mid_bx">
+                        <div class="tit">Contact Me!</div>
+                        <div class="item_bx">
+                            <dl class="item">
+                                <dt class="dt">Phone</dt>
+                                <dd class="dd">010.9258.5531</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt class="dt">Email</dt>
+                                <dd class="dd">tbek12@naver.com</dd>
+                            </dl>
+                            <dl class="item">
+                                <dt class="dt">Kakao</dt>
+                                <dd class="dd">tbek12</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="btm_bx">
+                        <p>Thank You</p>
+                    </div>
+                </div>
+            </section>
+            <div class="copyright" style="display:none">
+                <p>Publish by KIMSOOHYUN</p>
+            </div>
         </div>
-    </body>
+        <div class="scroll">
+            <div class="dot"></div>
+        </div>
+    </div> <!-- container -->
+
+    <div class="cursor">
+        <div class="ring"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/common.js"></script>
+    <script></script>
+</body>
+
 </html>
