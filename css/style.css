@@ -11,6 +11,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
+    background-color: #003855;
     font-family: 'Spoqa Han Sans Neo', sans-serif;
     font-weight: 300;
     -webkit-user-select: none;
@@ -1358,7 +1359,7 @@ body {
 
     .container .profile .cnt_bx .card_bx .info_wrap {
         bottom: -45px;
-        left: 110px;
+        left: 39px;
     }
 
     .container .profile .cnt_bx .txt_bx .txt_wrap {
@@ -1385,7 +1386,6 @@ body {
 /* MOBILE */
 @media(max-width:768px) {
     .container .profile .cnt_bx .card_bx .info_wrap {
-        left: 39px;
         bottom: -130px;
     }
 
