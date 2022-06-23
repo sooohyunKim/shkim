@@ -312,7 +312,7 @@ body {
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     animation: logo .7s ease-in-out forwards;
-    animation-delay: 1.8s;
+    animation-delay: 1.5s;
     z-index: 9999;
 }
 
