@@ -6,7 +6,7 @@ $(function () {
 })
 
 $(window).on('load', function () {
-    $('.container').delay(1700).fadeIn('slow');
+    $('.container').delay(1550).fadeIn('slow');
 });
 
 function mouse() {
