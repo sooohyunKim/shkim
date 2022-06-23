@@ -1251,12 +1251,13 @@ body {
         margin-left: 15px;
     }
 
-
-    /* PROFILE */
-    .container .bg_wrap>.profile .cnt_bx {
-        height: 600px;
+    /* COMMON */
+    .container .bg_wrap>section .cnt_bx {
+        height: 80%;
     }
 
+
+    /* PROFILE */
     .container .profile .cnt_bx .card_bx .img_wrap {
         top: 50%;
         right: 23px;
