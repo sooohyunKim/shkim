@@ -1042,6 +1042,7 @@ body {
     right: 300px;
     font-size: 70px;
     font-weight: 700;
+    transition: all .3s ease-in-out;
 }
 
 .container .contact .cnt_bx .btm_bx:before {
@@ -1437,9 +1438,11 @@ body {
 
     /* CONTACT */
     .container .contact .cnt_bx .btm_bx {
-        bottom: 220px;
+        display:none;
     }
 }
 
 /* MOBILE */
-@media(max-width:768px) {}
+@media(max-width:768px) {
+
+}
