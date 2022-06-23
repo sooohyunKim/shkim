@@ -375,6 +375,7 @@ body {
     width: inherit;
     height: calc(100vh - 50px);
     margin-top: 50px;
+    overscroll-behavior: contain;
 }
 
 .container .bg_wrap>section .blind,
