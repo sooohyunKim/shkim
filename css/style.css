@@ -1450,7 +1450,7 @@ body {
 }
 
 /* MOBILE */
-@media(max-width:414px) {
+@media(max-width:767px) {
     .logo {
         font-size: 30px;
         animation: fadeOut .4s ease-out forwards;
