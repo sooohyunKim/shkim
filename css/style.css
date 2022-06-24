@@ -1472,7 +1472,7 @@ body {
     }
 
     .arrow {
-        bottom: 80px;
+        bottom: 30px;
     }
 
     /* PROFILE */
@@ -1488,7 +1488,7 @@ body {
     .container .profile .cnt_bx .card_bx .img_wrap {
         top: 90px;
         right: -347px;
-        width: 150px;
+        width: 120px;
     }
 
     .container .profile .cnt_bx .card_bx .img_wrap:before {
